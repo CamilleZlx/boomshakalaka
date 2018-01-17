@@ -22,6 +22,3 @@ for i in range(2,n):
     min_cost0 = min_cost1
     min_cost1 = min(min_cost0, min_cost1) + cost[i]
 print(min(min_cost0, min_cost1))
-
-
-
