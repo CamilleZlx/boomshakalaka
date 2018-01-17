@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<h4>一列(无边框)：</h4>
+	<table border="0"> 
+		<tr>
+			<td>100</td>
+		</tr>
+	</table>
+
+	<table> 
+		<tr>
+			<td>100</td>
+		</tr>
+	</table>
+
+	<h4>一列：</h4>
+	<!--table边框为1像素,这个数值越大,边框就越粗。-->
+	<table border="1"> 
+		<tr>
+			<td>100</td>
+		</tr>
+	</table>
+
+	<h4>一行三列：</h4>
+	<table border="8">
+		<tr>
+			<td>100</td>
+			<td>200</td>
+			<td>300</td>
+		</tr>
+	</table>
+
+	<h4>两行三列：</h4>
+	<table border="15">
+		<tr>
+			<td>100</td>
+			<td>200</td>
+			<td>300</td>
+		</tr>
+		<tr>
+			<td>400</td>
+			<td>500</td>
+			<td>600</td>
+		</tr>
+	</table>
+
+	<!--caption表示表名，cellpadding表示单元格边距，cellspacing表示单元格间距，align属性对表格排列-->
+	<h4>水平表头：</h4>
+	<table border="1" cellpadding="10" bgcolor="#EBD3E8">
+	<caption>information</caption>
+		<tr>
+			<th align="left">name</th>
+			<th colspan="2" align="right">tel</th>
+			<th align="right">edu</th>
+		</tr>
+		<tr>
+			<td align="left">Camille</td>
+			<td align="right">18321538603</td>
+			<td align="right">18856305927</td>
+			<td></td>
+		</tr>
+	</table>
+
+	<h4>垂直表头：</h4>
+	<table border="1" cellspacing="10" background="C:/Users/Camille/Desktop/html_test/2.png">
+		<tr>
+			<th>name</th>
+			<td>Camille</td>
+		<tr>
+			<th rowspan="2">tel</th>
+			<td>18321538603</td>
+		</tr>
+		<tr>
+			<td>18856305927</td>
+		</tr>
+	</table>
+
+	<h4>表格内的标签:</h4>
+	<table border="1">
+		<tr>
+			<td bgcolor="#EBD3E8">
+				<p>chapter one</p>
+				<p>chapter two</p>
+			</td>
+			<td>contains a table:
+				<table border="1">
+					<tr>
+						<td>a</td>
+						<td>b</td>
+					</tr>
+					<tr>
+						<td>c</td>
+						<td>d</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+		<td>contains a list:
+			<ul>
+				<li>apple</li>
+				<li>orange</li>
+			</ul>
+		</td>
+		<td background="C:/Users/Camille/Desktop/html_test/2.png">hello</td>
+		</tr>
+	</table>
+
+	<h4>框架（frame）属性</h4>
+	<p>使用frame来控制围绕表格的边框</p>
+	<p><b>注释：</b>frame属性无法再IE中正确显示</p>
+
+	<p>table with frame="box"</p>
+	<table frame="box">
+		<tr>
+			<th>name</th>
+			<th>age</th>
+		</tr>
+		<tr>
+			<td>camille</td>
+			<td>18</td>
+		</tr>
+	</table>
+
+	<p>table with frame="above"</p>
+	<table frame="above">
+		<tr>
+			<th>name</th>
+			<th>age</th>
+		</tr>
+		<tr>
+			<td>camille</td>
+			<td>18</td>
+		</tr>
+	</table>
+
+	<p>table with frame="below"</p>
+	<table frame="below">
+		<tr>
+			<th>name</th>
+			<th>age</th>
+		</tr>
+		<tr>
+			<td>camille</td>
+			<td>18</td>
+		</tr>
+	</table>
+
+	<p>table with frame="hsides"</p>
+	<table frame="hsides">
+		<tr>
+			<th>name</th>
+			<th>age</th>
+		</tr>
+		<tr>
+			<td>camille</td>
+			<td>18</td>
+		</tr>
+	</table>
+
+	<p>table with frame="vsides"</p>
+	<table frame="vsides">
+		<tr>
+			<th>name</th>
+			<th>age</th>
+		</tr>
+		<tr>
+			<td>camille</td>
+			<td>18</td>
+		</tr>
+	</table>
+</body>
+</html>
