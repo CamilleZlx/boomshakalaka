@@ -12,13 +12,9 @@
 # print(is_same.index(False))
 # print(is_same[::-1].index(False))
 # print(is_same)
-
-cost = [1, 100, 1, 1, 1, 100, 1, 1, 100, 1]
-n = len(cost)
-min_cost0 = cost[0]
-min_cost1 = cost[1]
-
-for i in range(2,n):
-    min_cost0 = min_cost1
-    min_cost1 = min(min_cost0, min_cost1) + cost[i]
-print(min(min_cost0, min_cost1))
+import itertools
+nums = [1,2 ,3, 4, 5,6,7,8,9,6,7] 
+nums.sort()
+del nums[3:-3]
+print(nums)
+print(max(a*b*c for a, b, c in itertools.combinations(nums, 3)))
