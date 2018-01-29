@@ -6,7 +6,7 @@
         {
             "label": "python project",
             "type": "shell",
-            "command": "/Users/zhanglanxia/anaconda/envs/python36/bin/python",
+            "command": "/Users/zhanglanxia/anaconda/bin/python",
             "presentation": {
                 "reveal": "always",
                 "panel": "new"
